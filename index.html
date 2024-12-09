@@ -458,21 +458,23 @@
         </div>
         <div class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
-          <ul class="footer-subscribe-list">
-            <li class="footer-subscribe-list-item">
-              <input class="subscribe-input" type="text" name="footer-input" />
-            </li>
-            <li class="footer-subscribe-list-item">
-              <a class="" href="">
-                <button class="footer-subscribe-button">
-                  <p class="footer-button-text">Subscribe</p>
-                  <svg class="telegram" width="24" height="20">
-                    <use href="./images/icons.svg#telegram"></use>
-                  </svg>
-                </button>
-              </a>
-            </li>
-          </ul>
+          <form class="footer-subscribe-list">
+            <label class="footer-subscribe-list-item">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="footer-input"
+                placeholder="E-mail"
+              />
+              <button class="footer-subscribe-button" type="submit">
+                <!-- <span class="footer--buttontext">Subscribe</span> -->
+                Subscribe
+                <svg class="telegram" width="24" height="24">
+                  <use href="./images/icons.svg#telegram"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
@@ -487,7 +489,7 @@
         <p class="modal-caption">
           Leave your contacts and we will call you back
         </p>
-        <form class="form-action" action="">
+        <form class="form-action" name="review-form">
           <!-- Name -->
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-name"> Name </label>

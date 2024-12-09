@@ -578,17 +578,27 @@ img {
 
 .footer-subscribe-list {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   justify-content: center;
   align-items: center;
+}
+
+.footer-subscribe-list-item {
 }
 
 .subscribe-input {
   width: 264px;
   height: 40px;
   /* background-color: #2e2f42; */
-  opacity: 0;
-  border: 3px solid white;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
 }
 
 .footer-subscribe-button {
@@ -601,10 +611,16 @@ img {
   height: 40px;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   gap: 16px;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 8px; */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .footer-button-text {
@@ -616,6 +632,7 @@ img {
 
 .telegram {
   fill: white;
+  margin-left: 16px;
 }
 
 /* #endregion footer */
