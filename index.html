@@ -456,7 +456,141 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <ul class="footer-subscribe-list">
+            <li class="footer-subscribe-list-item">
+              <input class="subscribe-input" type="text" name="footer-input" />
+            </li>
+            <li class="footer-subscribe-list-item">
+              <a class="" href="">
+                <button class="footer-subscribe-button">
+                  <p class="footer-button-text">Subscribe</p>
+                  <svg class="telegram" width="24" height="20">
+                    <use href="./images/icons.svg#telegram"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn" type="button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="form-action" action="">
+          <!-- Name -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-name"> Name </label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                minlength="3"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./images/icons.svg#user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Phone -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-phone">
+              Phone number
+            </label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder=" "
+                pattern="\+38 \(0\d{2}\) \d{3} \d{2} \d{2}"
+                title="Please follow next format +38 (099) 123 45 67"
+              />
+              <svg class="modal-form-icon" width="13" height="13">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- email -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-email"> Email </label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form-icon" width="15" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-message"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+              minlength="10"
+              maxlength="1000"
+            ></textarea>
+          </div>
+
+          <!-- agreement -->
+          <div class="modal-form-agreement">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+              id="user-agreement"
+              value="true"
+              checked
+            />
+            <label class="modal-form-agreement-desc" for="user-agreement">
+              <!-- <input class="custom-checkbox" type="checkbox" name="agreement" /> -->
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="16" height="16">
+                  <use href="./images/icons.svg#checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="modal-form-agreement-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+          <!-- button -->
+          <button class="hero-button modal_send_button" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
