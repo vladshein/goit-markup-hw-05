@@ -849,8 +849,8 @@ input[type='checkbox']:checked
   + .modal-form-agreement-desc
   > .modal-form-checkbox {
   background-color: #404bbf;
+  border-color: transparent;
   border: none;
-  fill: #f4f4fd;
 }
 
 .modal-form-checkbox-icon {
@@ -862,8 +862,6 @@ input[type='checkbox']:checked
   > .modal-form-checkbox
   > .modal-form-checkbox-icon {
   opacity: 1;
-  background-color: #404bbf;
-  border: none;
   fill: #f4f4fd;
 }
 
