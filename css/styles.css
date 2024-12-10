@@ -846,23 +846,24 @@ img {
 }
 
 .modal-form-checkbox-icon {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 input[type='checkbox']:checked
   + .modal-form-agreement-desc
-  .modal-form-checkbox {
+  > .modal-form-checkbox {
+  fill: #f4f4fd;
   background-color: #404bbf;
   border: none;
 }
 
-input[type='checkbox']:checked
+/* input[type='checkbox']:checked
   + .modal-form-agreement-desc
   .modal-form-checkbox
   .modal-form-checkbox-icon {
   opacity: 1;
   fill: #f4f4fd;
-}
+} */
 
 .modal-form-agreement-link {
   color: #4d5ae5;
