@@ -845,22 +845,21 @@ img {
   fill: transparent;
 }
 
-input[type='checkbox']:checked
-  + .modal-form-agreement-desc
-  > .modal-form-checkbox {
-  background-color: #404bbf;
-  border-color: transparent;
-  border: none;
-}
-
 .modal-form-checkbox-icon {
   opacity: 0;
 }
 
 input[type='checkbox']:checked
   + .modal-form-agreement-desc
-  > .modal-form-checkbox
-  > .modal-form-checkbox-icon {
+  .modal-form-checkbox {
+  background-color: #404bbf;
+  border-color: transparent;
+}
+
+input[type='checkbox']:checked
+  + .modal-form-agreement-desc
+  .modal-form-checkbox
+  .modal-form-checkbox-icon {
   opacity: 1;
   fill: #f4f4fd;
 }
