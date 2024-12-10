@@ -714,6 +714,13 @@ img {
 .modal-btn-icon:focus {
   fill: #ffffff;
 } */
+.modal-btn:focus + .modal-btn-icon {
+  fill: #ffffff;
+}
+
+.modal-btn:hover + .modal-btn-icon {
+  fill: #ffffff;
+}
 
 .form-action {
   width: 360px;
@@ -851,9 +858,9 @@ img {
 }
 
 input[type='checkbox']:checked
-  /* + .modal-form-agreement-desc */
+  + .modal-form-agreement-desc
   > .modal-form-checkbox
-  > .modal-form-checkbox-icon {
+  /* > .modal-form-checkbox-icon */ {
   opacity: 1;
   background-color: #404bbf;
   border: none;
