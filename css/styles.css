@@ -853,7 +853,7 @@ input[type='checkbox']:checked
   + .modal-form-agreement-desc
   .modal-form-checkbox {
   background-color: #404bbf;
-  border-color: transparent;
+  border: none;
 }
 
 input[type='checkbox']:checked
