@@ -704,21 +704,13 @@ img {
 .modal-btn:hover {
   background-color: #404bbf;
   border: none;
+}
+
+.modal-btn:focus .modal-btn-icon {
   fill: #ffffff;
 }
 
-/* .modal-btn-icon:hover {
-  fill: #ffffff;
-}
-
-.modal-btn-icon:focus {
-  fill: #ffffff;
-} */
-.modal-btn:focus + .modal-btn-icon {
-  fill: #ffffff;
-}
-
-.modal-btn:hover + .modal-btn-icon {
+.modal-btn:hover .modal-btn-icon {
   fill: #ffffff;
 }
 
@@ -813,11 +805,10 @@ img {
 .modal-form-input:focus,
 .modal-form-message:focus {
   border-color: #4d5ae5;
-  color: #fff;
 }
 
-.modal-btn-icon {
-  fill: currentColor;
+.modal-form-input:focus + .modal-form-icon {
+  fill: #4d5ae5;
 }
 
 .modal-form-agreement {
